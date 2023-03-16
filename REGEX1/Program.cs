@@ -7,7 +7,8 @@
             // Console.WriteLine("Welcome to Regex");
             // FirstName.First_Name();
             // LastName.Last_Name();
-            ValidEmail.Valid_Email();
+            //ValidEmail.Valid_Email();
+            PhoneNumber.Phone_Number();
 
         }
     }
