@@ -8,7 +8,8 @@
             // FirstName.First_Name();
             // LastName.Last_Name();
             //ValidEmail.Valid_Email();
-            PhoneNumber.Phone_Number();
+            //PhoneNumber.Phone_Number();
+            Password8Char.Password8_Char();
 
         }
     }
