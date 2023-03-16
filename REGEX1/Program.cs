@@ -10,7 +10,8 @@
             //ValidEmail.Valid_Email();
             //PhoneNumber.Phone_Number();
             //Password8Char.Password8_Char();
-            Password1UC.Password1_UC();
+            // Password1UC.Password1_UC();
+            Password1Numeric.Password1_Numeric();
 
         }
     }
