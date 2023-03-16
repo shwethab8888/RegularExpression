@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace REGEX1
 {
-    public class Password1Numeric
+    public class Password1SC
     {
-
         public static bool IsValid(string password)
         {
-            return Regex.IsMatch(password, @"^(?=.*\d)[a-zA-Z0-9]{6,}$");
-
+            return Regex.IsMatch(password, @"^(?=.*[!@#$%^&*()_+])(?:(?!.*[!@#$%^&*()_+]{2,}).)*$");
         }
-        public static void Password1_Numeric()
+
+        public static void Password1_SC()
         {
             string password;
 
@@ -24,7 +23,7 @@ namespace REGEX1
                 Console.Write("Enter your password: ");
                 password = Console.ReadLine();
 
-                if (Password1Numeric.IsValid(password))
+                if (Password1SC.IsValid(password))
                 {
                     break;
                 }
@@ -35,4 +34,6 @@ namespace REGEX1
             Console.WriteLine($"Welcome, your password is valid: {password}");
         }
     }
+    
+
 }
