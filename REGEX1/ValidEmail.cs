@@ -11,7 +11,7 @@ namespace REGEX1
     {
         public static bool IsValid(string email)
         {
-            return Regex.IsMatch(email, @"^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*(?:\.[a-zA-Z]{2,})$");
+            return Regex.IsMatch(email, "^[A-Za-z0-9]+([.][a-zAZ0-9]+)?[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?$");
         }
 
         public static void Valid_Email()
