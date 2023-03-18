@@ -12,7 +12,7 @@ namespace REGEX1
     {
         public static bool IsValid(string firstName)
         {
-            return Regex.IsMatch(firstName, @"^[A-Z][a-z]{2,}$");
+            return Regex.IsMatch(firstName, "^[A-Z][a-zA-Z]{2,}$");
         }
 
         public static void First_Name()
