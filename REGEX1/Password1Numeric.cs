@@ -12,7 +12,7 @@ namespace REGEX1
 
         public static bool IsValid(string password)
         {
-            return Regex.IsMatch(password, @"^(?=.*\d)[a-zA-Z0-9]{6,}$");
+            return Regex.IsMatch(password, "^[0-9][a-zA-Z0-9]{6,}$";
 
         }
         public static void Password1_Numeric()
