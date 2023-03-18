@@ -11,7 +11,7 @@ namespace REGEX1
     {
         public static bool IsValid(string password)
         {
-            return Regex.IsMatch(password, @"^.{8,}$");
+            return Regex.IsMatch(password, "^[A-Z][a-zA-Z]{7,}$");
 
         }
         public static void Password8_Char()
